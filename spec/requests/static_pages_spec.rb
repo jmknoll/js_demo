@@ -9,11 +9,16 @@ describe "StaticPages" do
 		page.should have_content("Sample App")
 		end
 		
-		it "should have the right title" do
+		it "should have the base title" do
 		visit '/static_pages/home'
-		page.should have_selector('title',
-								:text => "Mandarin Chinese Lessons 101 | Home")
+		page.should have_selector('title', :text => "MCL 101")
 		end
+		
+		it "should not have the text 'Home'" do
+		visit '/static_pages/home'
+		page.should_not have_selector('title', :text => '| Home')
+		end
+		
 	end
 	
 	describe "help page" do
@@ -26,7 +31,7 @@ describe "StaticPages" do
 		it "should have the right title" do
 		visit '/static_pages/help'
 		page.should have_selector('title',
-								:text => "Mandarin Chinese Lessons 101 | Help")
+								:text => "MCL 101 | Help")
 		end
 	end
 	
@@ -40,7 +45,7 @@ describe "StaticPages" do
 		it "should have the right title" do
 		visit '/static_pages/about'
 		page.should have_selector('title',
-								:text => "Mandarin Chinese Lessons 101 | About")
+								:text => "MCL 101 | About")
 		end
 		
 	end
