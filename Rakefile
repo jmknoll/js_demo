@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-JsDemo::Application.load_tasks
+Mcl101::Application.load_tasks

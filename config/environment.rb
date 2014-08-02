@@ -2,4 +2,4 @@
 require File.expand_path('../application', __FILE__)
 
 # Initialize the rails application
-JsDemo::Application.initialize!
+Mcl101::Application.initialize!
