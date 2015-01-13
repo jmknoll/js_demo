@@ -54,7 +54,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $grayLight;
+  color: lightgrey;
 }
 
 p {
@@ -84,10 +84,6 @@ input {
   }
 }
 
-.field_with_errors {
-  @extend .control-group;
-  @extend .error;
-}
 
 /* header */
 
@@ -112,7 +108,7 @@ input {
 aside {
 	section {
 		padding: 10 px, 0;
-		border-top: 1px solid $grayLighter;
+		border-top: 1px solid lightgrey;
 		&:first-child{
 			border: 0;
 			padding-top: 0;
@@ -143,11 +139,11 @@ footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid $grayMediumLight;
-  color: $grayLight;
+  color: lightgrey;
   a {
-    color: $gray;
+    color: grey;
     &:hover {
-      color: $grayDarker;
+      color: darkgrey;
     }
   }
   small {
